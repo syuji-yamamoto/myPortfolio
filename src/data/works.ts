@@ -27,6 +27,7 @@ export const works: Work[] = [
       "Google Books API を活用した読書管理アプリ。書籍の検索・登録、読書ステータス管理、メモ機能を搭載。データは localStorage で保持。",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Google Books API"],
     image: "/images/work-bookshelf.png",
+    demoUrl: "https://my-bookshelf-lac.vercel.app/",
     githubUrl: "https://github.com/syuji-yamamoto/my-bookshelf",
   },
   {
