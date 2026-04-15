@@ -1,18 +1,24 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-400 to-emerald-500 text-white">
+    <section className="min-h-screen flex items-center justify-center bg-charcoal text-cream">
       <div className="text-center px-6">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4">Your Name</h1>
-        <p className="text-xl md:text-2xl font-light mb-8 opacity-90">
+        <p className="text-sm tracking-[0.3em] text-warm-muted mb-6 uppercase">
+          Portfolio
+        </p>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wider">
+          Shuji Yamamoto
+        </h1>
+        <div className="w-16 h-px bg-warm-border mx-auto my-6" />
+        <p className="text-lg md:text-xl font-light text-warm-muted tracking-wide">
           Web Developer
         </p>
         <a
           href="#about"
-          className="inline-block border-2 border-white rounded-full p-3 hover:bg-white/20 transition-colors"
+          className="inline-block mt-12 border border-warm-muted rounded-full p-3 hover:border-cream transition-colors"
           aria-label="下にスクロール"
         >
           <svg
-            className="w-6 h-6"
+            className="w-5 h-5 text-warm-muted"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -20,7 +26,7 @@ export default function Hero() {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth={2}
+              strokeWidth={1.5}
               d="M19 9l-7 7-7-7"
             />
           </svg>

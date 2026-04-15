@@ -13,29 +13,35 @@ export type Work = {
  */
 export const works: Work[] = [
   {
+    title: "Type Rush",
+    description:
+      "1分間のタイピング練習ゲーム。ユーザー登録・ログイン、スコア履歴、コンボ表示、BGM・効果音など本格的な機能を実装。Docker + AWS でデプロイ。",
+    tags: ["React", "TypeScript", "Laravel", "Docker", "AWS"],
+    image: "/images/work-typerush.png",
+    demoUrl: "https://type-rush.com",
+    githubUrl: "https://github.com/syuji-yamamoto/type-rush",
+  },
+  {
+    title: "My Bookshelf",
+    description:
+      "Google Books API を活用した読書管理アプリ。書籍の検索・登録、読書ステータス管理、メモ機能を搭載。データは localStorage で保持。",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Google Books API"],
+    image: "/images/work-bookshelf.png",
+    githubUrl: "https://github.com/syuji-yamamoto/my-bookshelf",
+  },
+  {
     title: "Portfolio Site",
     description:
-      "Next.js と Tailwind CSS で制作したポートフォリオサイトです。レスポンシブ対応で、Cloudflare Pages にデプロイしています。",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Cloudflare Pages"],
+      "このポートフォリオサイトです。Next.js と Tailwind CSS でクラシックなデザインに仕上げました。nodemailer によるお問い合わせフォーム付き。",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "nodemailer"],
     image: "/images/work-portfolio.png",
-    demoUrl: "#",
-    githubUrl: "https://github.com/",
+    githubUrl: "https://github.com/syuji-yamamoto/myPortfolio",
   },
   {
-    title: "Sample App",
+    title: "Sample Java App",
     description:
-      "サンプルのWebアプリケーションです。ユーザー認証やCRUD操作などの基本機能を実装しています。",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    image: "/images/work-sample.png",
-    demoUrl: "#",
-    githubUrl: "https://github.com/",
-  },
-  {
-    title: "CLI Tool",
-    description:
-      "開発効率を上げるためのコマンドラインツールです。日常業務の自動化に活用しています。",
-    tags: ["Python", "Click", "Docker"],
-    image: "/images/work-cli.png",
-    githubUrl: "https://github.com/",
+      "Spring Boot + React のフルスタック学習用プロジェクト。REST API の基本構成と React フロントエンドの連携を実装。",
+    tags: ["Java", "Spring Boot", "React", "Maven"],
+    image: "/images/work-samplejava.png",
   },
 ];
