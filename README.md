@@ -65,10 +65,10 @@ docker compose up -d
 docker compose down
 ```
 
-| サービス | URL | 説明 |
-|---------|-----|------|
+| サービス       | URL                   | 説明             |
+| -------------- | --------------------- | ---------------- |
 | Mailpit Web UI | http://localhost:8025 | 受信メールの確認 |
-| Mailpit SMTP | localhost:1025 | SMTP サーバー |
+| Mailpit SMTP   | localhost:1025        | SMTP サーバー    |
 
 `.env.local` は開発用の Mailpit 設定が入っています：
 
