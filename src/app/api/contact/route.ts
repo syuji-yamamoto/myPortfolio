@@ -7,7 +7,7 @@ export async function POST(request: Request) {
   if (!name || !email || !message) {
     return NextResponse.json(
       { error: "すべてのフィールドを入力してください" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
     console.error("Mail send error:", err);
     return NextResponse.json(
       { error: "メールの送信に失敗しました" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
