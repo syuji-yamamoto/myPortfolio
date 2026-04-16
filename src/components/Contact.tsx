@@ -2,6 +2,9 @@
 
 import { useState, FormEvent } from "react";
 
+const WEB3FORMS_URL = "https://api.web3forms.com/submit";
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
+
 type Status = "idle" | "sending" | "sent" | "error";
 
 export default function Contact() {
@@ -15,9 +18,9 @@ export default function Contact() {
     const formData = new FormData(form);
 
     try {
-      formData.append("access_key", "1d699145-446e-4c81-a908-d09ec26fc393");
+      formData.append("access_key", WEB3FORMS_KEY);
 
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(WEB3FORMS_URL, {
         method: "POST",
         body: formData,
       });
