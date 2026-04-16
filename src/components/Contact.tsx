@@ -2,8 +2,9 @@
 
 import { useState, FormEvent } from "react";
 
+// Web3Forms の公開キー（秘匿不要）https://web3forms.com/
 const WEB3FORMS_URL = "https://api.web3forms.com/submit";
-const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
+const WEB3FORMS_KEY = "1d699145-446e-4c81-a908-d09ec26fc393";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
