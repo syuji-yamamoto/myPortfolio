@@ -44,5 +44,6 @@ export const works: Work[] = [
       "Spring Boot + React のフルスタック学習用プロジェクト。REST API の基本構成と React フロントエンドの連携を実装。",
     tags: ["Java", "Spring Boot", "React", "Maven"],
     image: "/images/work-samplejava.webp",
+    githubUrl: "https://github.com/syuji-yamamoto/sampleJava",
   },
 ];
