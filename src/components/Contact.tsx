@@ -50,6 +50,7 @@ export default function Contact() {
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
+          <input type="checkbox" name="botcheck" className="hidden" />
           {/* Name */}
           <div>
             <label
