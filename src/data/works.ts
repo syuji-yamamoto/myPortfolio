@@ -33,8 +33,8 @@ export const works: Work[] = [
   {
     title: "Portfolio Site",
     description:
-      "このポートフォリオサイトです。Next.js と Tailwind CSS でクラシックなデザインに仕上げました。nodemailer によるお問い合わせフォーム付き。",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "nodemailer"],
+      "このポートフォリオサイトです。Next.js と Tailwind CSS でクラシックなデザインに仕上げました。Web3Forms によるお問い合わせフォーム付き。",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Cloudflare Pages"],
     image: "/images/work-portfolio.png",
     githubUrl: "https://github.com/syuji-yamamoto/myPortfolio",
   },
