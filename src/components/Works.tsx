@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { works } from "@/data/works";
 
 export default function Works() {
@@ -15,21 +16,14 @@ export default function Works() {
               key={work.title}
               className="border border-warm-border bg-white hover:shadow-md transition-shadow"
             >
-              {/* Thumbnail placeholder */}
-              <div className="aspect-video bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center text-warm-border border-b border-warm-border">
-                <svg
-                  className="w-10 h-10"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1}
-                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z"
-                  />
-                </svg>
+              <div className="aspect-video relative border-b border-warm-border">
+                <Image
+                  src={work.image}
+                  alt={work.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
 
               <div className="p-6">
