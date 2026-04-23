@@ -14,7 +14,7 @@ export default function Works() {
           {works.map((work) => (
             <article
               key={work.title}
-              className="border border-warm-border bg-white hover:shadow-md transition-shadow"
+              className="border border-warm-border bg-white hover:shadow-md transition-shadow flex flex-col"
             >
               <div className="aspect-video relative border-b border-warm-border">
                 <Image
@@ -26,7 +26,7 @@ export default function Works() {
                 />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-lg font-bold mb-2 tracking-wide">
                   {work.title}
                 </h3>
@@ -47,7 +47,7 @@ export default function Works() {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4 pt-2 border-t border-warm-border">
+                <div className="flex gap-4 pt-2 border-t border-warm-border mt-auto">
                   {work.demoUrl && (
                     <a
                       href={work.demoUrl}
@@ -55,7 +55,7 @@ export default function Works() {
                       rel="noopener noreferrer"
                       className="text-sm text-brown hover:text-charcoal transition-colors"
                     >
-                      Demo &rarr;
+                      サイトへ &rarr;
                     </a>
                   )}
                   {work.githubUrl && (
