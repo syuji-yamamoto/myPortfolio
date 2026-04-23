@@ -15,7 +15,7 @@ export const works: Work[] = [
   {
     title: "stackbystep",
     description:
-      "Next.js + Django + MySQL で自作した個人技術ブログ。Docker Compose でサービスを分離し、ConoHa VPS に Ansible でプロビジョニング、GitHub Actions で main ブランチから自動デプロイする CI/CD パイプラインを構築。",
+      "Next.js + Django + MySQL で自作した個人ブログ。Docker Compose でサービスを分離し、ConoHa VPS に Ansible でプロビジョニング、GitHub Actions で main ブランチから自動デプロイする CI/CD パイプラインを構築。",
     tags: ["Next.js", "Django", "MySQL", "Docker", "Ansible", "GitHub Actions", "ConoHa VPS"],
     image: "/images/work-stackbystep.webp",
     demoUrl: "https://stackbystep.com/",
